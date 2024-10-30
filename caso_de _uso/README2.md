@@ -63,7 +63,8 @@ Producto  --  DetalleFactura : va
 
 ## Diagrama Estructural
 
-![Diagrama estructural](imagenes/estructural1.PNG)
+![estructural1](https://github.com/user-attachments/assets/9a971323-8d0b-4b09-aefc-af8bfcdc15d9)
+
 
 
 
