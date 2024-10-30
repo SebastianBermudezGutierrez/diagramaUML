@@ -1,1 +1,3 @@
-![estructural1](Estructural1.PNG)
+git add imagenes/estructural1.PNG
+git commit -m "Agregando diagrama estructural"
+git push
