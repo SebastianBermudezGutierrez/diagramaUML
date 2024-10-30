@@ -21,7 +21,6 @@ class Usuario {
     +String rol
 }
 
-' Clase Producto
 class Producto {
     +Integer idProducto
     +String nombre
@@ -29,14 +28,12 @@ class Producto {
     +String categoria
 }
 
-' Clase Inventario
 class Inventario {
     +Integer idInventario
     +Integer cantidad
     +Producto producto
 }
 
-' Clase Factura
 class Factura {
     +Integer idFactura
     +Date fecha
@@ -44,7 +41,6 @@ class Factura {
     +Usuario usuario
 }
 
-' Clase DetalleFactura
 class DetalleFactura {
     +Integer idDetalle
     +Integer cantidad
@@ -53,12 +49,12 @@ class DetalleFactura {
     +Producto producto
 }
 
-' Relaciones entre clases
 Usuario  --  Factura : crea
 Factura  --  DetalleFactura : tiene
 Producto  --  Inventario : esta en
 Inventario  --  Producto : controla
 Producto  --  DetalleFactura : va
+
 @enduml
 
 ## Diagrama Estructural
