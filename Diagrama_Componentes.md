@@ -15,22 +15,22 @@ diagramas de clase parciales y generales.
 @startuml
 package "Sistema de Carrito de Compras" {
 
-    component "Frontend (React/Vue)" {
+    component "Interfaz " {
         [Vista de Productos]
         [Carrito de Compras]
         [Gestión de Usuario]
         [Confirmación de Pedido]
     }
 
-    component "Backend (Java Spring Boot)" {
-        [UsuarioService]
-        [ProductoService]
-        [FacturaService]
-        [InventarioService]
-        [DetalleFacturaService]
+    component "Backend " {
+        [ServicioUsuario]
+        [ServicioProducto]
+        [ServicioFactura]
+        [ServicioInventario]
+        [ServicioDetalleFactura]
     }
 
-    component "Base de Datos (MySQL/PostgreSQL)" {
+    component "Base de Datos " {
         [Usuario]
         [Producto]
         [Inventario]
@@ -38,22 +38,21 @@ package "Sistema de Carrito de Compras" {
         [DetalleFactura]
     }
 
-    component "Autenticación (JWT/Spring Security)" {
+    component "Autenticación " {
         [Validación de Usuario]
         [Generador de Tokens]
     }
 
-    component "Servidor Web (Nginx)" {
+    component "Servidor Web " {
         [Distribución de Archivos]
         [Proxy Reverso]
     }
-
-    ' Dependencias y Conexiones'
-    "Frontend (React/Vue)" -down-> "Backend (Java Spring Boot)" : Peticiones REST 
-    "Backend (Java Spring Boot)" -down-> "Base de Datos (MySQL/PostgreSQL)" : Operaciones CRUD 
-    "Autenticación (JWT/Spring Security)" -left-> "Backend (Java Spring Boot)" : Control de Acceso
-    "Servidor Web (Nginx)" -down-> "Frontend (React/Vue)" : Distribución de Archivos Estáticos
-    "Servidor Web (Nginx)" -down-> "Backend (Java Spring Boot)" : Proxy Reverso
+    
+    "Interfaz " -down-> "Backend " : Peticiones REST 
+    "Backend " -down-> "Base de Datos " : Operaciones CRUD 
+    "Autenticación " -left-> "Backend " : Control de Acceso
+    "Servidor Web " -down-> "Interfaz " : Distribución de Archivos Estáticos
+    "Servidor Web " -down-> "Backend " : Proxy Reverso
 }
 @enduml
 
