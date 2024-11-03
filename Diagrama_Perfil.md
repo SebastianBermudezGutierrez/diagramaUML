@@ -15,6 +15,7 @@ diagramas de clase parciales y generales.
 @startuml
 
 package "Perfil de Sistema de Carrito de Compras" {
+    
     class Usuario <<Perfil>> {
         + idUsuario: int
         + nombre: String
