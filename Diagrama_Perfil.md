@@ -1,4 +1,4 @@
-  ## Problema del Carrito de Compras
+## Problema del Carrito de Compras
 
 - El proyecto consiste en desarrollar una base de datos para un sistema de carrito de compras, donde los
 estudiantes deberán manejar roles de administrador y comprador. Además, deberán realizar consultas SQL
