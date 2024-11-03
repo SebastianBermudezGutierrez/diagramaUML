@@ -53,7 +53,6 @@ package "Perfil de Sistema de Carrito de Compras" {
     }
 }
 
-' Relaciones entre clases
 Usuario  --  Factura : crea
 Factura  --  DetalleFactura : contiene
 Producto  --  Inventario : está en
